@@ -1,0 +1,7 @@
+name: first
+on: [workflow_dispatch]
+jobs:
+  lumber1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Ahh shit! here we go again\n"
