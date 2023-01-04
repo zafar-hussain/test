@@ -1,3 +1,14 @@
+name: first wf
+on: [workflow_dispatch]
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: day hi
+      - run: echo "Hi"
+      - name: say bye
+      - run: echo "bye"
+
 
 
 
