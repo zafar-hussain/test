@@ -61,19 +61,19 @@ class Example3(object):
     Args:
         object (_type_): _description_
     """
+
     def init(self, _bar: int) -> Union[int, tuple[list[str], str]]:
         """
         TODO:
         """
 
-
         if _bar:
             _bar += 1
             _bar = _bar * _bar
             return _bar
-        else:
-            some_string: str = """
+
+        some_string: str = """
                        Indentation in multiline strings should not be touched.
 Only actual code should be reindented.
 """
-            return (sys.path, some_string)
+        return (sys.path, some_string)
