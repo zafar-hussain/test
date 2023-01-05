@@ -6,6 +6,7 @@
     Returns:
         _type_: _description_
     """
+from dataclasses import dataclass
 import math
 import sys
 from typing import Union
@@ -51,8 +52,8 @@ def example2():
     """
     return {"has_key() is deprecated": True}.has_key({"f": 2}.has_key(""))
 
-
-class Example3(object):
+@dataclass
+class Example3():
     """
     Example3 _summary_
 
