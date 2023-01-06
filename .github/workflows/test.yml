@@ -1,7 +1,7 @@
 name: Test project
 on: [push, pull_request, workflow_dispatch]
 jobs:
-  job1:
+  testing:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -12,3 +12,14 @@ jobs:
           node-version: 18
       - run: npm ci
       - run: npm test
+  deploying:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3.3.0
+      - name: Setup nudejs
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - run: npm ci
+      - run: echo "Deploying"
