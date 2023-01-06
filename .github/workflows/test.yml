@@ -1,5 +1,5 @@
 name: Test project
-on: [push, pull, workflow_dispatch]
+on: [push, pull_request, workflow_dispatch]
 jobs:
   job1:
     runs-on: ubuntu-latest
