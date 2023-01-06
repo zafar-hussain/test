@@ -13,6 +13,7 @@ jobs:
       - run: npm ci
       - run: npm test
   deploying:
+    needs: testing
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
